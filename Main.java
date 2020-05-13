@@ -1,4 +1,4 @@
-package com.kolyan;
+package com.stepan;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -23,11 +23,11 @@ public class Main {
 
         HashSet<String> item_id = new HashSet<>();
 
-        String url = "jdbc:mysql://195.19.44.146:3306/user22?serverTimezone=UTC";
+        String url = "jdbc:mysql://195.19.44.146:3306/user25?serverTimezone=UTC";
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
 
-            connection = DriverManager.getConnection(url,"user22", "user22");
+            connection = DriverManager.getConnection(url,"user25", "user25");
             System.out.println("Connected...");
 
             statement =  connection.createStatement();
